@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta   charset="UTF-8">
+        <meta   name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portofolio Saya</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Nur Kholiq</h1>
+            <p>Web Developer | Desainer | Drawer</p>
+        </header>
+
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Saya seorang karyawan yang bekerja sebagai teknisi di bidang Teknologi Informasi di perusahaan PT. ANTAREJA MAHADA MAKMUR, yang juga memiliki hoby menggambar, memancing dan bermain game</p>
+        </section>
+
+        <section id="riwayat">
+            <h2>Proyek Saya</h2>
+            <div class="card">
+                <h3>Bekerja di PT. ANTAREJA MAHADA MAKMUR</h3>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Email: kholiqnur137@gmail.com</p>
+        </section>
+        <footer>
+            <p>© 2025 Nur Kholiq</p>
+        </footer>
+    </body>
+</html>
