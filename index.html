@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="header">
     <div class="container">
       <h1>Muhammad Nur Kholiq</h1>
       <p>BIO DATA DIRI</p>
@@ -37,11 +37,11 @@
   <section id="tentang">
     <div class="container">
       <h2>Tentang Saya</h2>
-      <p>Saya seorang karyawan yang bekerja di perusahaan PT. Antareja Mahada Makmur, perusahaan yang bergerak di bidang tambang dan mineral, di departemen COE (Centre of Excellence) dengan jabatan sebagai ICT Technician.
-        Lahir di Bengalon 03 Agustus 2001. Jenis Kelamin Laki-Laki. Beragama Islam. Status Belum Menikah.
+      <p>Lahir di Bengalon 03 Agustus 2001. Jenis Kelamin Laki-Laki. Beragama Islam. Status Belum Menikah.
         Memiliki Ibu bernama Sihartatik, Bapak bernama Hafid, memiliki 2 saudara kandung dan 1 anak angkat yang diantaranya bernama Ahmad Kholil (Anak ke 2), Raisa Qurrota Aini (Anak ke 3),
-        dan Ningsih (Anak angkat). Hobi saya adalah memancing, kadang menggambar, dan ketika capek saya hanya mendengar kan music ataupun menonton, mau itu dari youtube maupun film movie.
-        Saya memiliki kampung di Jawa, yang tepat di Bucor Kulon, Kec. Pakuniran, Kabupaten Probolinggo, Jawa Timur, yang berasal dari Ibuk
+        dan Ningsih (Anak angkat). Hobi saya adalah memancing, kadang menggambar, ketika capek saya hanya mendengar kan music ataupun menonton, mau itu dari youtube maupun film movie, dan penyayang kucing
+        Saya memiliki kampung di Jawa, yang tepat di Bucor Kulon, Kec. Pakuniran, Kabupaten Probolinggo, Jawa Timur, yang berasal dari Ibuk. Saya seorang karyawan yang bekerja di perusahaan
+        PT. Antareja Mahada Makmur, perusahaan yang bergerak di bidang tambang dan mineral, di departemen COE (Centre of Excellence) dengan jabatan sebagai ICT Technician.
       </p>
     </div>
   </section>
@@ -186,6 +186,23 @@
         }
       });
     });
+    let lastScrollTop = 0;
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scroll ke bawah
+    header.classList.add("hide");
+  } else {
+    // Scroll ke atas
+    header.classList.remove("hide");
+  }
+
+  lastScrollTop = scrollTop;
+});
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
