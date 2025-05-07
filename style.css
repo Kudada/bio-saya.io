@@ -1,0 +1,304 @@
+html {
+  scroll-behavior: smooth;
+  transition: all 1s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #201E43;
+  color: #e0e0e0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 75%;
+  max-width: 1200px;
+  margin: auto;
+  transition: padding 0.3s ease;
+}
+
+header {
+  background-color: #134B70;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease, box-shadow 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #201E43;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #134B70;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease;
+}
+
+header.hide {
+  transform: translateY(-100%);
+}
+
+.container {
+  width: 85%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px;
+}
+
+section {
+  padding: 100px 0;
+  margin-top: 100px; /* Untuk memberi ruang agar header tidak menutupi konten */
+}
+
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  transition: font-size 0.3s ease;
+}
+
+header h2 {
+  font-size: 5rem;
+  margin-bottom: 5px;
+  transition: font-size 0.3s ease;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #3B6978;
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  padding: 60px 0;
+  margin-bottom: 20px;
+  transition: padding 0.3s ease;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #134B70;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease, border-radius 0.5s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
+  background-color: #1f1f1f;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.6s ease, border 0.5s ease;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+  border: 3px solid #3B6978;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #134B70;
+  padding: 30px 0;
+  text-align: center;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .photo-gallery {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-gallery {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Dropdown Navigation */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #134B70;
+  color: #e0e0e0;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: #3B6978;
+  transform: scale(1.05);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4d6694;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  z-index: 1000;
+  max-height: 0;
+  opacity: 0;
+}
+
+.dropdown-content a {
+  padding: 12px 24px;
+  color: #e0e0e0;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #134B70;
+  color: #ffffff;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+  max-height: 300px;
+  opacity: 1;
+}
+
+/* Overlay untuk foto besar */
+.photo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.photo-overlay img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.photo-overlay.active {
+  display: flex;
+}
+
+.photo-overlay img:hover {
+  transform: scale(1.05);
+}
